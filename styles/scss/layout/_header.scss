@@ -1,0 +1,81 @@
+.header {
+  background: {
+    image: url("./../../images/header.jpg");
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+  }
+  height: 100%;
+}
+
+/*
+===============
+Start Navigation Stayle
+===============
+*/
+
+.top-nav {
+  padding: 3rem 5rem;
+}
+
+//Nav Logo
+.logo__title {
+  font: {
+    family: $gilroy-b;
+  }
+}
+
+// Nav Links Stayle
+.nav-item {
+  font: {
+    family: $gilroy-sb;
+    size: 1.65rem;
+  }
+  color: $brown;
+
+  &::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: $brown;
+    margin-top: 0.5rem;
+    transition: all 0.3s linear;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+// Nav Icons Stayle
+.nav-icon i {
+  font-size: 1.6rem;
+  color: $brown;
+}
+
+.nav-icon:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.shopping-cart-icon {
+  position: relative;
+}
+.shopping-cart__tooltip {
+  font-size: 1.3rem;
+  background-color: $brown;
+  color: #fff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.5rem;
+  right: -1rem;
+}
+/*
+===============
+End Navigation Stayle
+===============
+*/

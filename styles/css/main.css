@@ -34,7 +34,7 @@ main {
    */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -71,6 +71,8 @@ pre {
    */
 a {
   background-color: transparent;
+  text-decoration: none;
+  color: inherit;
 }
 
 /**
@@ -142,6 +144,8 @@ sup {
    */
 img {
   border-style: none;
+  width: 100%;
+  display: block;
 }
 
 /* Forms
@@ -382,4 +386,123 @@ template {
   font-weight: 100;
   src: url("./../../fonts/gilroy/Gilroy-Thin.ttf") format("truetype");
 }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "gilroy";
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html *,
+html *::after,
+html *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.inner-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.df-sbc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  background-image: url("./../../images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+/*
+===============
+Start Navigation Stayle
+===============
+*/
+.top-nav {
+  padding: 3rem 5rem;
+}
+
+.logo__title {
+  font-family: "gilroy-b";
+}
+
+.nav-item {
+  font-family: "gilroy-sb";
+  font-size: 1.65rem;
+  color: #463232;
+}
+
+.nav-item::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #463232;
+  margin-top: 0.5rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.nav-icon i {
+  font-size: 1.6rem;
+  color: #463232;
+}
+
+.nav-icon:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.shopping-cart-icon {
+  position: relative;
+}
+
+.shopping-cart__tooltip {
+  font-size: 1.3rem;
+  background-color: #463232;
+  color: #fff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.5rem;
+  right: -1rem;
+}
+
+/*
+===============
+End Navigation Stayle
+===============
+*/
 /*# sourceMappingURL=main.css.map */
