@@ -40,7 +40,7 @@ Start Navigation Stayle
     height: 2px;
     background-color: $brown;
     margin-top: 0.5rem;
-    transition: all 0.3s linear;
+    transition: $transition;
   }
   &:hover::after {
     width: 100%;
@@ -77,5 +77,43 @@ Start Navigation Stayle
 /*
 ===============
 End Navigation Stayle
+===============
+*/
+
+/******************************/
+
+/*
+===============
+Start Header Title Stayle
+===============
+*/
+
+.header-title {
+  font: {
+    family: $gilroy-bl;
+    size: 8rem;
+  }
+  color: $brown;
+  text-align: center;
+  // letter-spacing: 2px;
+}
+
+/*
+===============
+End Header Title Stayle
+===============
+*/
+
+/******************************/
+
+/*
+===============
+Start Header Title Stayle
+===============
+*/
+
+/*
+===============
+End Header Title Stayle
 ===============
 */
