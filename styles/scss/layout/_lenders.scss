@@ -1,0 +1,27 @@
+#lenders {
+  background-color: $lightOrange;
+}
+
+.lenders-wrapper {
+  padding: 4rem 3rem;
+}
+
+.lenders-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.lenders-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lenders-list__item {
+  width: 10rem;
+}
+
+/* .lenders-list__item:not(:last-child) {
+  margin-right: 3rem;
+} */

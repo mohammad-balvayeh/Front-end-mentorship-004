@@ -652,4 +652,37 @@ Start Header Social Stayle
 End Header Social Stayle
 ===============
 */
+#lenders {
+  background-color: #fef6f0;
+}
+
+.lenders-wrapper {
+  padding: 4rem 3rem;
+}
+
+.lenders-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.lenders-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lenders-list__item {
+  width: 10rem;
+}
+
+/* .lenders-list__item:not(:last-child) {
+  margin-right: 3rem;
+} */
 /*# sourceMappingURL=main.css.map */
