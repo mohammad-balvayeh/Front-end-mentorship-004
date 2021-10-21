@@ -1,0 +1,27 @@
+#sales-info {
+  background-color: $lightOrange;
+}
+
+.sales-info-wrapper {
+  padding: 5rem;
+}
+
+.sales-info-item {
+  flex-direction: column;
+  padding: 2rem 0;
+  width: 30%;
+}
+
+.sales-info-item:not(:last-child) {
+  border-right: 2px solid $brown;
+}
+
+.sales-info-item-title {
+  font-size: 5rem;
+  color: $brown;
+  margin-bottom: 1rem;
+}
+.sales-info-item-desc {
+  font-size: 1.8rem;
+  color: $lightBlack;
+}
