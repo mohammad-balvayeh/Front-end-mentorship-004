@@ -6,6 +6,7 @@
     position: center;
   }
   height: 100%;
+  position: relative;
 }
 
 /*
@@ -158,5 +159,35 @@ Start Header Detail Stayle
 /*
 ===============
 End Header Detail Stayle
+===============
+*/
+
+/******************************/
+
+/*
+===============
+Start Header Social Stayle
+===============
+*/
+
+.header-social {
+  position: absolute;
+  bottom: 3rem;
+  right: 5rem;
+  font-size: 2rem;
+}
+.social-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+/*
+===============
+End Header Social Stayle
 ===============
 */

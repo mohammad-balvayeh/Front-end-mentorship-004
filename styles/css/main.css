@@ -452,6 +452,7 @@ ul {
   background-size: cover;
   background-position: center;
   height: 100%;
+  position: relative;
 }
 
 /*
@@ -611,6 +612,44 @@ Start Header Detail Stayle
 /*
 ===============
 End Header Detail Stayle
+===============
+*/
+/******************************/
+/*
+===============
+Start Header Social Stayle
+===============
+*/
+.header-social {
+  position: absolute;
+  bottom: 3rem;
+  right: 5rem;
+  font-size: 2rem;
+}
+
+.social-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+/*
+===============
+End Header Social Stayle
 ===============
 */
 /*# sourceMappingURL=main.css.map */
