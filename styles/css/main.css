@@ -346,24 +346,10 @@ template {
 }
 
 @font-face {
-  font-family: "gilroy";
+  font-family: "gilroy-t";
   font-style: normal;
-  font-weight: 400;
-  src: url("./../../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "gilroy-bl";
-  font-style: normal;
-  font-weight: 900;
-  src: url("./../../fonts/gilroy/Gilroy-Black.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "gilroy-b";
-  font-style: normal;
-  font-weight: 700;
-  src: url("./../../fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 100;
+  src: url("./../../fonts/gilroy/Gilroy-Thin.ttf") format("truetype");
 }
 
 @font-face {
@@ -374,6 +360,13 @@ template {
 }
 
 @font-face {
+  font-family: "gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./../../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "gilroy-sb";
   font-style: normal;
   font-weight: 500;
@@ -381,16 +374,23 @@ template {
 }
 
 @font-face {
-  font-family: "gilroy-t";
+  font-family: "gilroy-b";
   font-style: normal;
-  font-weight: 100;
-  src: url("./../../fonts/gilroy/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 700;
+  src: url("./../../fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "gilroy-bl";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./../../fonts/gilroy/Gilroy-Black.ttf") format("truetype");
 }
 
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "gilroy";
+  font-family: "gilroy-sb";
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -405,6 +405,7 @@ html *::before {
 body {
   width: 100%;
   height: 100vh;
+  color: #463232;
 }
 
 .inner-container {
@@ -430,6 +431,21 @@ ul {
           align-items: center;
 }
 
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  border: 2px solid #463232;
+  outline: 0;
+  font-family: "gilroy-sb";
+  font-size: 1.7rem;
+  color: #ffffff;
+  background-color: #463232;
+  padding: 1rem 3rem;
+  letter-spacing: 2px;
+}
+
 .header {
   background-image: url("./../../images/header.jpg");
   background-repeat: no-repeat;
@@ -452,9 +468,7 @@ Start Navigation Stayle
 }
 
 .nav-item {
-  font-family: "gilroy-sb";
   font-size: 1.65rem;
-  color: #463232;
 }
 
 .nav-item::after {
@@ -478,7 +492,6 @@ Start Navigation Stayle
 
 .nav-icon i {
   font-size: 1.6rem;
-  color: #463232;
 }
 
 .nav-icon:not(:last-child) {
@@ -492,7 +505,7 @@ Start Navigation Stayle
 .shopping-cart__tooltip {
   font-size: 1.3rem;
   background-color: #463232;
-  color: #fff;
+  color: #ffffff;
   padding: 0.1rem 0.4rem;
   border-radius: 50%;
   position: absolute;
@@ -514,8 +527,8 @@ Start Header Title Stayle
 .header-title {
   font-family: "gilroy-bl";
   font-size: 8rem;
-  color: #463232;
   text-align: center;
+  margin-bottom: 8rem;
 }
 
 /*
@@ -526,12 +539,78 @@ End Header Title Stayle
 /******************************/
 /*
 ===============
-Start Header Title Stayle
+Start Header Detail Stayle
 ===============
 */
+.header-text {
+  width: 30%;
+}
+
+.header-text p {
+  font-size: 1.8rem;
+  line-height: 2;
+  -webkit-line-clamp: 3;
+}
+
+.header-search {
+  width: 22%;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 2rem;
+  border: 0;
+  outline: 0;
+  font-size: 1.7rem;
+  color: inherit;
+  text-transform: capitalize;
+}
+
+.search-input::-webkit-input-placeholder {
+  font-size: 1.5rem;
+}
+
+.search-input:-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+.search-input::-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+.search-input::placeholder {
+  font-size: 1.5rem;
+}
+
+.search-icon {
+  cursor: pointer;
+  background-color: #463232;
+  padding: 0.8rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 1rem;
+}
+
+.search-icon i {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.search-icon:hover > i {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+}
+
 /*
 ===============
-End Header Title Stayle
+End Header Detail Stayle
 ===============
 */
 /*# sourceMappingURL=main.css.map */

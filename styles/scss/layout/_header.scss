@@ -27,11 +27,7 @@ Start Navigation Stayle
 
 // Nav Links Stayle
 .nav-item {
-  font: {
-    family: $gilroy-sb;
-    size: 1.65rem;
-  }
-  color: $brown;
+  font-size: 1.65rem;
 
   &::after {
     content: " ";
@@ -54,7 +50,6 @@ Start Navigation Stayle
 // Nav Icons Stayle
 .nav-icon i {
   font-size: 1.6rem;
-  color: $brown;
 }
 
 .nav-icon:not(:last-child) {
@@ -67,7 +62,7 @@ Start Navigation Stayle
 .shopping-cart__tooltip {
   font-size: 1.3rem;
   background-color: $brown;
-  color: #fff;
+  color: $white;
   padding: 0.1rem 0.4rem;
   border-radius: 50%;
   position: absolute;
@@ -93,9 +88,8 @@ Start Header Title Stayle
     family: $gilroy-bl;
     size: 8rem;
   }
-  color: $brown;
   text-align: center;
-  // letter-spacing: 2px;
+  margin-bottom: 8rem;
 }
 
 /*
@@ -108,12 +102,61 @@ End Header Title Stayle
 
 /*
 ===============
-Start Header Title Stayle
+Start Header Detail Stayle
 ===============
 */
 
+.header-text {
+  width: 30%;
+}
+.header-text p {
+  font-size: 1.8rem;
+  line-height: 2;
+  -webkit-line-clamp: 3;
+}
+
+// Header Search Stayle
+.header-search {
+  width: 22%;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.search-input {
+  width: 100%;
+  padding: 2rem;
+  border: 0;
+  outline: 0;
+  font-size: 1.7rem;
+  color: inherit;
+  text-transform: capitalize;
+}
+.search-input::placeholder {
+  font: {
+    size: 1.5rem;
+  }
+}
+.search-icon {
+  cursor: pointer;
+  background-color: $brown;
+  padding: 0.8rem;
+  color: $white;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+
+  i {
+    transition: $transition;
+  }
+  &:hover > i {
+    transform: rotate(1turn);
+  }
+}
+
 /*
 ===============
-End Header Title Stayle
+End Header Detail Stayle
 ===============
 */
