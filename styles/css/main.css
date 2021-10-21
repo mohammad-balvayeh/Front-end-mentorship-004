@@ -409,7 +409,7 @@ body {
 }
 
 .inner-container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -417,6 +417,14 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 .df-sbc {
@@ -440,10 +448,40 @@ ul {
   outline: 0;
   font-family: "gilroy-sb";
   font-size: 1.7rem;
-  color: #ffffff;
-  background-color: #463232;
   padding: 1rem 3rem;
   letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-solid {
+  color: #ffffff;
+  background-color: #463232;
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.btn-solid:hover {
+  background-color: transparent;
+  color: #463232;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-hollow {
+  background-color: transparent;
+  color: #463232;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.btn-hollow:hover {
+  color: #ffffff;
+  background-color: #463232;
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
 }
 
 .header {
@@ -657,7 +695,7 @@ End Header Social Stayle
 }
 
 .lenders-wrapper {
-  padding: 4rem 3rem;
+  padding: 4rem;
 }
 
 .lenders-title {
@@ -685,4 +723,31 @@ End Header Social Stayle
 /* .lenders-list__item:not(:last-child) {
   margin-right: 3rem;
 } */
+.about-us-wrapper {
+  padding: 5rem 0;
+}
+
+.about-us-item {
+  width: 45%;
+}
+
+.about-us-title {
+  margin-top: 5rem;
+  font-size: 7rem;
+}
+
+.about-us-desc {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.about-us-desc-first {
+  width: 70%;
+}
+
+.about-us-btn {
+  margin-bottom: 5rem;
+}
 /*# sourceMappingURL=main.css.map */

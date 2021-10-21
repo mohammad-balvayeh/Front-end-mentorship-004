@@ -20,7 +20,7 @@ body {
 }
 
 .inner-container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -30,9 +30,15 @@ ul {
   list-style-type: none;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 //Display flex
-// justify-content: space-between
-// align-items: center
 .df-sbc {
   display: flex;
   justify-content: space-between;
@@ -52,15 +58,33 @@ ul {
     family: $gilroy-sb;
     size: 1.7rem;
   }
-  color: $white;
-  background-color: $brown;
   padding: 1rem 3rem;
   letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-// .container {
-//   width: 100%;
-//   max-width: 1300px;
-//   margin: 0 auto;
-//   height: 100%;
-// }
+.btn-solid {
+  color: $white;
+  background-color: $brown;
+  box-shadow: $box-shadow;
+  transition: $transition;
+
+  &:hover {
+    background-color: transparent;
+    color: $brown;
+    box-shadow: none;
+  }
+}
+
+.btn-hollow {
+  background-color: transparent;
+  color: $brown;
+  transition: $transition;
+
+  &:hover {
+    color: $white;
+    background-color: $brown;
+    box-shadow: $box-shadow;
+  }
+}
