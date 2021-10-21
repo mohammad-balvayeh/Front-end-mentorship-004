@@ -858,4 +858,43 @@ End Header Social Stayle
   font-size: 1.8rem;
   color: rgba(0, 0, 0, 0.5);
 }
+
+.product-package-wrapper {
+  padding: 10rem 0;
+}
+
+.product-package-img {
+  width: 50%;
+  position: relative;
+  height: 60rem;
+}
+
+.product-package-img-bg {
+  background-color: #edd9cb;
+  position: absolute;
+  left: -2rem;
+  bottom: -2rem;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.product-package-info {
+  width: 45%;
+}
+
+.product-package-info-title {
+  font-size: 5rem;
+  width: 60%;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.product-package-info-desc {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  margin-bottom: 5rem;
+  text-align: justify;
+}
 /*# sourceMappingURL=main.css.map */
