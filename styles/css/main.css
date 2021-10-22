@@ -897,4 +897,115 @@ End Header Social Stayle
   margin-bottom: 5rem;
   text-align: justify;
 }
+
+#customer-feedback {
+  background-color: #fef6f0;
+}
+
+.customer-feedback-wrapper {
+  padding: 10rem 0;
+}
+
+.customer-feedback-header {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 5rem;
+}
+
+.customer-feedback-title {
+  font-size: 7rem;
+}
+
+.customer-feedback-desc {
+  font-size: 1.9rem;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+}
+
+.customer-feedback-main {
+  position: relative;
+}
+
+.customer-card {
+  width: 30%;
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.customer-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
+}
+
+.customer-card-rate {
+  font-size: 1.6rem;
+  color: #fe8b77;
+}
+
+.customer-card-comment {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  margin: 5rem 0;
+}
+
+.customer-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customer-info-img {
+  margin-right: 2rem;
+}
+
+.customer-info-img img {
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+}
+
+.customer-name {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.customer-job {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.customer-feedback-control-wrapper {
+  position: absolute;
+  top: -7rem;
+  right: 0;
+  font-size: 2rem;
+}
+
+.customer-feedback-control-prev {
+  margin-right: 2rem;
+  background-color: transparent;
+  border: 2px solid #463232;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.customer-feedback-control-next {
+  border: 2px solid #463232;
+  background-color: #463232;
+  border-radius: 50%;
+  padding: 1rem;
+  color: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */
