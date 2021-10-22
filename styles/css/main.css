@@ -1008,4 +1008,101 @@ End Header Social Stayle
   padding: 1rem;
   color: #ffffff;
 }
+
+.footer-wrapper {
+  padding-top: 30rem;
+  padding-bottom: 2rem;
+}
+
+.footer-info {
+  width: 25%;
+}
+
+.footer-info-title {
+  font-size: 4rem;
+}
+
+.footer-info-desc {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-lists {
+  width: 60%;
+}
+
+.footer-list-wrapper {
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  text-transform: capitalize;
+}
+
+.footer-list-title {
+  font-family: "gilroy-l";
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-list-item {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.footer-list-item::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 0.5rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.footer-list-item:hover::after {
+  width: 100%;
+}
+
+.footer-list-item:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+
+.footer-social {
+  margin: 5rem 0;
+}
+
+.footer-social-items {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.footer-social-item {
+  margin-right: 3rem;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: #463232;
+  color: #ffffff;
+}
+
+.footer-social-item:nth-child(2) {
+  padding: 1rem 1.5rem;
+}
+
+.footer-copyright {
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  border-top: 2px solid #cccccc;
+}
 /*# sourceMappingURL=main.css.map */
