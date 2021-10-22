@@ -530,12 +530,23 @@ Start Navigation Stayle
   margin-right: 3rem;
 }
 
+.nav-icon {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.nav-icon:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  cursor: pointer;
+}
+
 .nav-icon i {
   font-size: 1.6rem;
 }
 
 .nav-icon:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .shopping-cart-icon {
@@ -742,6 +753,7 @@ End Header Social Stayle
   font-size: 1.7rem;
   line-height: 1.6;
   margin-bottom: 3rem;
+  text-align: justify;
 }
 
 .about-us-desc-first {

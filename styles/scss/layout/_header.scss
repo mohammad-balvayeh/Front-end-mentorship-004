@@ -49,12 +49,20 @@ Start Navigation Stayle
 }
 
 // Nav Icons Stayle
+.nav-icon {
+  transition: $transition;
+
+  &:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+}
 .nav-icon i {
   font-size: 1.6rem;
 }
 
 .nav-icon:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .shopping-cart-icon {
