@@ -76,17 +76,19 @@
   font-size: 2rem;
 }
 
-.customer-feedback-control-prev {
-  margin-right: 2rem;
+.customer-feedback-control-prev,
+.customer-feedback-control-next {
   background-color: transparent;
   border: 2px solid $brown;
   border-radius: 50%;
   padding: 1rem;
+  cursor: pointer;
+  transition: $transition;
+  &:hover {
+    background-color: $brown;
+    color: $white;
+  }
 }
-.customer-feedback-control-next {
-  border: 2px solid $brown;
-  background-color: $brown;
-  border-radius: 50%;
-  padding: 1rem;
-  color: $white;
+.customer-feedback-control-prev {
+  margin-right: 2rem;
 }

@@ -1016,20 +1016,25 @@ End Header Social Stayle
   font-size: 2rem;
 }
 
-.customer-feedback-control-prev {
-  margin-right: 2rem;
+.customer-feedback-control-prev,
+.customer-feedback-control-next {
   background-color: transparent;
   border: 2px solid #463232;
   border-radius: 50%;
   padding: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
-.customer-feedback-control-next {
-  border: 2px solid #463232;
+.customer-feedback-control-prev:hover,
+.customer-feedback-control-next:hover {
   background-color: #463232;
-  border-radius: 50%;
-  padding: 1rem;
   color: #ffffff;
+}
+
+.customer-feedback-control-prev {
+  margin-right: 2rem;
 }
 
 .footer-wrapper {
