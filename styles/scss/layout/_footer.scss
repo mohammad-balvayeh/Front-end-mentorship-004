@@ -72,6 +72,13 @@
   font-size: 2rem;
   background-color: $brown;
   color: $white;
+  border: 2px solid $brown;
+  cursor: pointer;
+  transition: $transition;
+  &:hover {
+    background-color: $white;
+    color: $brown;
+  }
 }
 
 .footer-social-item:nth-child(2) {

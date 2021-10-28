@@ -1120,6 +1120,15 @@ End Header Social Stayle
   font-size: 2rem;
   background-color: #463232;
   color: #ffffff;
+  border: 2px solid #463232;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.footer-social-item:hover {
+  background-color: #ffffff;
+  color: #463232;
 }
 
 .footer-social-item:nth-child(2) {
